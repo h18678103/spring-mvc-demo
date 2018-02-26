@@ -1,5 +1,6 @@
 package com.hqs.test.web.controller;
 
+import com.hqs.test.dao.entity.Test;
 import com.hqs.test.service.TestService;
 import com.hqs.test.web.config.RedisConfig;
 import javax.annotation.Resource;
@@ -23,10 +24,10 @@ public class TestController {
 
     @ResponseBody
     @RequestMapping(value = "t1.do")
-    public String t1(){
+    public String t1(int id){
         System.out.println(redisConfig.getHost());
         System.out.println(redisConfig.getPort());
-        int n = testService.get1();
+        Test n = testService.getTest(id);
         System.out.println(n);
         return "test1";
     }
