@@ -7,6 +7,9 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author huqinsong
+ * @author huqinsong
+ * @author huqinsong
+ * @author huqinsong
  * @date 2018/2/26
  */
 @Component
