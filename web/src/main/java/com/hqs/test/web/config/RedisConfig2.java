@@ -13,6 +13,9 @@ import org.springframework.stereotype.Component;
 public class RedisConfig2 {
 
     /** Logger */
+    /** Logger */
+    /** Logger */
+    /** Logger */
     private static Logger log = LoggerFactory.getLogger(RedisConfig2.class);
 
     @Value("${redis.host}")
