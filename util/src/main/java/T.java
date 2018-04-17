@@ -3,16 +3,12 @@
  * @date 2018/3/15
  */
 public class T {
-    public static void main(String[] args) {
-        Byte b = null;
-//        System.out.println(1==b);
-        System.out.println(Integer.MAX_VALUE);
-        new B();
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
 
-        try {
-            System.out.println(1);
-        }   catch (Exception e){
-            e.printStackTrace();
-        }
+        Class<?> b = Class.forName("B");
+//        ClassLoader loader = T.class.getClassLoader();
+//        Class<?> b = loader.loadClass("B");
+        Object o = b.newInstance();
+        System.out.println(o);
     }
 }
