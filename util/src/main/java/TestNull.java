@@ -5,6 +5,6 @@
 public class TestNull {
     public static void main(String[] args) {
         String s = null;
-        System.out.println("abc"+s);
+        System.out.println(s+"abc");
     }
 }

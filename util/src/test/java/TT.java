@@ -7,6 +7,14 @@ import java.util.Random;
  * @date 2018/4/18
  */
 public class TT {
+
+    public static int x = 10;
+
+    public int get() {
+        System.out.println("x="+x);
+        return x;
+    }
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         for (int i=0; i<1000; i++){

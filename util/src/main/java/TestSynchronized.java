@@ -29,18 +29,8 @@ public class TestSynchronized {
 
     public static void main(String[] args) {
         final TestSynchronized myt2 = new TestSynchronized();
-        Thread test1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                myt2.test1();
-            }
-        }, "test1");
-        Thread test2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                myt2.test2();
-            }
-        }, "test2");
+        Thread test1 = new Thread(() -> myt2.test1(), "test1");
+        Thread test2 = new Thread(() -> test2(), "test2");
         test1.start();
         test2.start();
     }
