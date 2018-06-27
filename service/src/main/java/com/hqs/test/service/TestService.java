@@ -9,4 +9,6 @@ import com.hqs.test.dao.entity.Test;
 public interface TestService {
     Test getTest(int id);
 
+    void p();
+
 }

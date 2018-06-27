@@ -15,5 +15,10 @@ public class TTTTT {
         for (byte b: bytes){
             System.out.println(b);
         }
+
+        Byte b = null;
+        if (b != 1){
+            System.out.println(222);
+        }
     }
 }

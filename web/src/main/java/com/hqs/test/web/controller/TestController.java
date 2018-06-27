@@ -20,14 +20,14 @@ public class TestController {
     private RedisConfig redisConfig;
 
     @Resource
-    private TestService testService;
+    private TestService testService1;
 
     @ResponseBody
     @RequestMapping(value = "t1.do")
     public String t1(int id){
         System.out.println(redisConfig.getHost());
         System.out.println(redisConfig.getPort());
-        Test n = testService.getTest(id);
+        Test n = testService1.getTest(id);
         System.out.println(n);
         return "test1";
     }
