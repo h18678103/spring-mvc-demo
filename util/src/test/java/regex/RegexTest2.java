@@ -21,7 +21,7 @@ public class RegexTest2 {
         //虽然匹配失败，但由于charSequence里面的"123"和pattern是匹配的,所以下次的匹配从位置4开始
         print("1matcher.matches()=>"+matcher.matches());
         //测试匹配位置
-        matcher.find();
+        print("1.1matcher.find()=>"+matcher.find());
         print("2matcher.start()=>"+matcher.group()+" - "+matcher.start());
 
         //使用reset方法重置匹配位置

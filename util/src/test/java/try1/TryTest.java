@@ -9,7 +9,7 @@ public class TryTest {
         try {
             System.out.println(1);
             System.exit(0);
-            return;
+            throw new RuntimeException();
         } catch (Exception e){
             System.out.println(2);
         } finally {

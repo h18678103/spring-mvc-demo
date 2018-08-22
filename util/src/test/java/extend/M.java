@@ -8,8 +8,8 @@ import java.util.Arrays;
  */
 public class M {
     public static void main(String[] args) {
-        A1 a1 = new A1();
-        A2 a2 = new A2();
+        A a1 = new A1();
+        A a2 = new A2();
         a1.getList().add("a");
         a1.getList().add("b");
         a2.getList().add("c");
@@ -18,6 +18,8 @@ public class M {
         System.out.println(Arrays.toString(arr));
         String s2 = String.join(",", a2.getList());
         System.out.println(s2);
+
+//        a1.a();
 
     }
 }

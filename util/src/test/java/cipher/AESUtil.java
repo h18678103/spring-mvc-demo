@@ -99,7 +99,9 @@ public class AESUtil {
 
     public static void main(String[] args) {
         String s = "hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx12345hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789hello,您好xx123456789";
-
+        s += s;
+        s += s;
+        s += s;
         System.out.println("s:" + s);
         System.out.println("s:" + s.length());
 

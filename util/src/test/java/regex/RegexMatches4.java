@@ -16,8 +16,8 @@ public class RegexMatches4 {
         Pattern p = Pattern.compile(REGEX);
         // get a matcher object
         Matcher m = p.matcher(INPUT);
-//        INPUT = m.replaceAll(REPLACE);
-        INPUT = m.replaceFirst (REPLACE);
+        INPUT = m.replaceAll(REPLACE);
+//        INPUT = m.replaceFirst (REPLACE);
         System.out.println(INPUT);
     }
 }
