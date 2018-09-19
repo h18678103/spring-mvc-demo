@@ -1,6 +1,7 @@
 package bigdecmali;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 
 /**
  * @author huqinsong
@@ -12,7 +13,8 @@ public class T {
     private static final BigDecimal DEC100 = new BigDecimal(100);
 
     public static void main(String[] args) {
-        BigDecimal bigDecimal = new BigDecimal(125005).divide(DEC100);
-        System.out.println(bigDecimal+"元");
+        BigDecimal bigDecimal = new BigDecimal(0.001998765);
+        DecimalFormat df = new DecimalFormat("#.####%");
+        System.out.println(df.format(bigDecimal)+"元");
     }
 }

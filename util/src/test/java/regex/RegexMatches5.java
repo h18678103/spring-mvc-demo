@@ -17,7 +17,7 @@ public class RegexMatches5 {
         while(m.find()){
             m.appendReplacement(sb,REPLACE);
         }
-        m.appendTail(sb);
+//        m.appendTail(sb);
         System.out.println(sb.toString());
     }
 }

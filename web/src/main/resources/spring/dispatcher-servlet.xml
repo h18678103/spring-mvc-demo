@@ -33,4 +33,32 @@
     <bean id="multipartResolver"
           class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
     </bean>
+
+
+
+    <!-- ###参数校验+消息转换配置### -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <!-- 二进制流编码 -->
+            <bean id="byteArrayHttpMessageConverter" class="org.springframework.http.converter.ByteArrayHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/octet-stream;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+
+            <!-- 文本编码(UTF-8) -->
+            <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="UTF-8" index="0"/>
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/plain;charset=UTF-8</value>
+                        <value>text/html;charset=UTF-8</value>
+                        <value>application/json;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 </beans>

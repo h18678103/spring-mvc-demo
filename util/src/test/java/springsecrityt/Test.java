@@ -23,7 +23,7 @@ public class Test {
             String hashedPassword = passwordEncoder.encode(password);
             System.out.println(hashedPassword);
         }
-        boolean matches = passwordEncoder.matches("123456", "$12a$10$ibS0MBX2fvzOBHhbyi9U0O5aPD90/O9/NCIjB59AHLjmDcdB44UjG");
+        boolean matches = passwordEncoder.matches("123456", "$2a$10$ph/Shx8wV9SWHIihEGc6E.2coZaIwHwoB1yBjTnatfW5BCZzG2JiW");
         System.out.println(matches);
     }
 }

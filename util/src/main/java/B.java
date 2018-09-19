@@ -8,8 +8,10 @@ public class B extends A{
     }
     {
         System.out.println("b.{}");
+        System.out.println("b1===>"+this.getClass().getName());
     }
     public B() {
         System.out.println("b.cons");
+        System.out.println("b2===>"+this.getClass().getName());
     }
 }

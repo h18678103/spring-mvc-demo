@@ -20,6 +20,8 @@ public class TheoriesTest {
     public static int ageValue1 = 10;
     @DataPoint
     public static int ageValue2 = 20;
+    @DataPoint
+    public static Long ageValue3 = 30l;
     @Theory
     public void testMethod(String name, int age){
         System.out.println(String.format("%s's age is %s", name, age));

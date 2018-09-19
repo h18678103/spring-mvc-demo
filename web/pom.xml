@@ -37,7 +37,13 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
-
+        <!-- servlet-api(local) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <!--<scope>provided</scope>-->
+        </dependency>
 
         <dependency>
             <groupId>com.baidu.disconf</groupId>
