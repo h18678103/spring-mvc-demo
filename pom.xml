@@ -13,7 +13,6 @@
         <module>service</module>
         <module>dao</module>
         <module>util</module>
-        <module>test111</module>
     </modules>
 
     <properties>
