@@ -189,7 +189,7 @@ public class TTEE {
                     //<!-- 工商银行 -->
                     //<entry><key>CGB</key><value>306</value></entry>
                     System.out.println("<!-- "+bank2.getName()+" -->");
-                    System.out.println("<entry><key>"+bank2.getEn()+"</key><value>"+bank.getNo()+"</value></entry>");
+                    System.out.println("<entry><key>"+bank2.getEn()+"</key><value>"+bank.getEn()+"</value></entry>");
                 }
             }
         }
