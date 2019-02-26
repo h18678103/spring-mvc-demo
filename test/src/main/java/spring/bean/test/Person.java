@@ -52,15 +52,13 @@ public class Person implements BeanFactoryAware, BeanNameAware, InitializingBean
 
     @Override
     public String toString() {
-        return "Person [address=" + address + ", name=" + name + ", phone="
-                + phone + "]";
+        return "Person [address=" + address + ", name=" + name + ", phone=" + phone + "]";
     }
 
     // 这是BeanFactoryAware接口方法
     @Override
     public void setBeanFactory(BeanFactory arg0) throws BeansException {
-        System.out
-                .println("【BeanFactoryAware接口】调用BeanFactoryAware.setBeanFactory()");
+        System.out.println("【BeanFactoryAware接口】调用BeanFactoryAware.setBeanFactory()");
         this.beanFactory = arg0;
     }
 

@@ -18,6 +18,12 @@
             <artifactId>service</artifactId>
         </dependency>
 
+        <!-- sqlserver数据库驱动 -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>sqljdbc4</artifactId>
+            <version>4.0</version>
+        </dependency>
 
         <!-- 日志slf4j+logback -->
         <dependency>
@@ -49,6 +55,12 @@
             <groupId>com.baidu.disconf</groupId>
             <artifactId>disconf-client</artifactId>
             <version>2.6.35</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
