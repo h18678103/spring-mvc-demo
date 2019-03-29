@@ -12,7 +12,11 @@ public class T {
 //        String decode = URLDecoder.decode(s, "UTF-8");
 //        System.out.println(decode);
 
-        Long l = null;
-        System.out.println(l == 1);
+        Integer i = 0;
+        if ((i = 5) != null) {
+            System.out.println(1 + ",i=" + i);
+        } else {
+            System.out.println(2 + ",i=" + i);
+        }
     }
 }
