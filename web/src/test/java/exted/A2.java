@@ -7,6 +7,7 @@ package exted;
 public class A2 extends A {
     @Override
     protected int AGet() {
+        System.out.println("A2");
         return 2;
     }
 }
